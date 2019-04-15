@@ -14,5 +14,24 @@ import java.io.IOException;
 
 public class secondController {
 
+    private ObservableList<Person> personData = FXCollections.observableArrayList();
+    @FXML
+    private TableView<Person> personTable;
+    @FXML
+    private TableColumn<String, Person> name;
+    @FXML
+    private TextField inputName;
+
+    @FXML
+    private void initialize (){
+        // убери комментарии будет исключение
+        //name.setCellValueFactory(new PropertyValueFactory<>("name"));
+        //personTable.setItems(personData);
+        initData();
+    }
+
+    private void initData (){
+        personData.add(new Person(inputName.getText()));
+    }
 
 }
