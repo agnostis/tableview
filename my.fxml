@@ -8,13 +8,14 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainController">
    <children>
-      <Button layoutX="23.0" layoutY="24.0" mnemonicParsing="false" onAction="#initialize" text="Button" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="125.0" AnchorPane.topAnchor="24.0" />
-      <TextField fx:id="inputName" layoutX="100.0" layoutY="24.0" prefHeight="25.0" prefWidth="87.0" AnchorPane.rightAnchor="13.0" />
+      <Button layoutX="6.0" layoutY="12.0" mnemonicParsing="false" onAction="#initialize" text="add Name" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="142.0" AnchorPane.topAnchor="12.0" />
+      <TextField fx:id="inputName" layoutX="142.0" layoutY="12.0" prefHeight="25.0" prefWidth="87.0" AnchorPane.rightAnchor="14.0" />
       <TableView fx:id="personTable" layoutY="73.0" prefHeight="400.0" prefWidth="243.0">
         <columns>
           <TableColumn fx:id="name" prefWidth="134.0" text="Name" />
           <TableColumn prefWidth="113.0" text="C2" />
         </columns>
       </TableView>
+      <Button layoutX="28.0" layoutY="48.0" mnemonicParsing="false" onAction="#showDialog" prefHeight="25.0" prefWidth="95.0" text="new Window" />
    </children>
 </AnchorPane>
